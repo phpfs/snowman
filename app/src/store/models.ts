@@ -8,6 +8,7 @@ import {
 import { DatasetTypes } from 'types/DatasetTypes';
 import experimentFileFormatEnum from 'types/ExperimentFileFormats';
 import { MetricsTuplesCategories } from 'types/MetricsTuplesCategories';
+import { SoftKPIQuestion } from 'components/SoftKPIQuestions/SoftKPIQuestionProps';
 
 export interface AddAlgorithmDialogStore {
   algorithmName: string;
@@ -73,6 +74,11 @@ export interface MetricsStore {
   selectedDataView: MetricsTuplesCategories;
 }
 
+export interface SoftKPISurveyStore {
+  couldEdit: boolean;
+  surveyItems: SoftKPIQuestion[];
+}
+
 export interface Store {
   DatasetsStore: DatasetsStore;
   ExperimentsStore: ExperimentsStore;
@@ -83,4 +89,5 @@ export interface Store {
   GlobalIndicatorStore: GlobalIndicatorStore;
   MetricsStore: MetricsStore;
   InputChipStore: InputChipStore;
+  SoftKPISurveyStore: SoftKPISurveyStore;
 }

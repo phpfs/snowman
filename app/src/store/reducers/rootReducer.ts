@@ -8,6 +8,7 @@ import { ExperimentsReducer } from 'store/reducers/ExperimentsReducer';
 import { GlobalIndicatorReducer } from 'store/reducers/GlobalIndicatorReducer';
 import { InputChipReducer } from 'store/reducers/InputChipReducer';
 import { MetricsReducer } from 'store/reducers/MetricsReducer';
+import { SoftKPISurveyReducer } from 'store/reducers/SoftKPISurveyReducer';
 
 export const rootReducer = combineReducers({
   DatasetsStore: DatasetsReducer,
@@ -19,4 +20,5 @@ export const rootReducer = combineReducers({
   GlobalIndicatorStore: GlobalIndicatorReducer,
   MetricsStore: MetricsReducer,
   InputChipStore: InputChipReducer,
+  SoftKPISurveyStore: SoftKPISurveyReducer,
 });
